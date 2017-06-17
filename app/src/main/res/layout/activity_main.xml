@@ -35,6 +35,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/logo_siam"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></LinearLayout>
+
+
+    </LinearLayout>
+
+
+
 </RelativeLayout>
 
 

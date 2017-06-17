@@ -3,4 +3,6 @@
     <dimen name="h1">40sp</dimen>
     <dimen name="h2">20sp</dimen>
     <dimen name="padding">15dp</dimen>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="icon">400dp</dimen>
 </resources>
