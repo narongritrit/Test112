@@ -2,4 +2,6 @@
     <string name="app_name">Test1</string>
     <string name="title">ม.สยาม</string>
     <string name="log_in">Log in</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
 </resources>

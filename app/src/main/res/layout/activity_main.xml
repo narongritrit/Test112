@@ -7,6 +7,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.student.test1.MainActivity">
 
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_siam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:padding="@dimen/padding"
@@ -26,16 +31,9 @@
 
 
     </LinearLayout>
-
-    <Button
-        android:background="@color/colorPrimary"
-        android:text="@string/log_in"
-        android:textColor="@color/textColorPrimary"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <LinearLayout
+        android:padding="@dimen/padding"
+        android:background="#82ffffff"
         android:layout_centerVertical="true"
         android:gravity="center_horizontal"
         android:layout_margin="@dimen/margin"
@@ -44,17 +42,56 @@
         android:layout_height="wrap_content">
         <ImageView
             android:src="@drawable/logo_siam"
-            android:layout_width="@dimen/icon"
-            android:layout_height="@dimen/icon" />
-<LinearLayout
+            android:layout_width="195dp"
+            android:layout_height="235dp" />
+
+        <LinearLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"></LinearLayout>
+    android:layout_height="wrap_content">
 
+    <ImageView
+        android:src="@mipmap/ic_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColorHint="@color/colorPrimaryLight"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+        <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@mipmap/ic_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColorHint="@color/colorPrimaryLight"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:text="New Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
-
-
+    <Button
+        android:background="@color/colorPrimary"
+        android:text="@string/log_in"
+        android:textColor="@color/textColorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
 
