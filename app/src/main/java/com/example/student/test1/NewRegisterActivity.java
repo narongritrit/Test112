@@ -25,6 +25,7 @@ public class NewRegisterActivity extends AppCompatActivity {
         //initial View
         initialView();
 
+
         //Back Controller
         backController();
 
