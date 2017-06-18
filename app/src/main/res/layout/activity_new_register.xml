@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
+            android:id="@+id/btnBack"
             android:src="@mipmap/ic_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -26,8 +27,8 @@
 
     <ScrollView
         android:background="@color/colorPrimaryLight"
-        android:layout_above="@id/btnNewRegister"
-        android:layout_below="@id/relTop"
+        android:layout_above="@+id/btnNewRegister"
+        android:layout_below="@+id/relTop"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -54,6 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <EditText
+                    android:id="@+id/edtName"
                     android:textColorHint="@color/colorPrimaryLight"
                     android:inputType="text"
                     android:textColor="@color/colorPrimaryDark"
@@ -71,6 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <EditText
+                    android:id="@+id/edtUser"
                     android:textColorHint="@color/colorPrimaryLight"
                     android:inputType="text"
                     android:textColor="@color/colorPrimaryDark"
@@ -88,6 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <EditText
+                    android:id="@+id/edtPassword"
                     android:textColorHint="@color/colorPrimaryLight"
                     android:inputType="text"
                     android:textColor="@color/colorPrimaryDark"
