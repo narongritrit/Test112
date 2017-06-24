@@ -1,7 +1,9 @@
 package com.example.student.test1;
 
+import android.support.annotation.BoolRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -48,10 +50,30 @@ public class NewRegisterActivity extends AppCompatActivity {
                     MyAlert myAlert = new MyAlert(NewRegisterActivity.this);
                     myAlert.myDialog("Have Space","Pleas Fill");
                 } else {
+                    uploadValueToServer();
 
                 }
             }
         });
+    }
+
+    private void uploadValueToServer() {
+        try {
+            PostDataToServer postDataToServer =new PostDataToServer(NewRegisterActivity.this);
+
+            postDataToServer.execute(nameString,userString,passwordString,"http://androidthai.in.th/siam/addDataRit.php");
+            if (Boolean.parseBoolean(postDataToServer.get())) {
+                finish();
+            } else {
+                MyAlert myAlert =new MyAlert(NewRegisterActivity.this);
+                myAlert.myDialog("Cannot Upload","Please Try against");
+            }
+        } catch (Exception e){
+            Log.d("$","e upload"+e.toString());
+
+
+
+        }
     }
 
     private void backController() {
