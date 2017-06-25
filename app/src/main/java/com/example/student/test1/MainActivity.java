@@ -92,6 +92,13 @@ public class MainActivity extends AppCompatActivity {
             } else if (passwordString.equals(loginStrings1[3])) {
                 Toast.makeText(MainActivity.this,"Welcome"+loginStrings1[1],
                         Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this,MapsActivity.class);
+                intent.putExtra("Login",loginStrings1);
+                startActivity(intent);
+                finish();
+
+
             } else {
                 myAlert.myDialog(getResources().getString(R.string.titlePasswordFalse),
                         getResources().getString(R.string.messageUserFalse));
